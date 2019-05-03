@@ -4,7 +4,8 @@ Product Showing Webpage using FLASK
 ## Assignment:
 Product Showing Webpage using FLASK :
 
-## Overview -You have to create a Flask based product showing web app where user can see different products and can search products according to the name.
+## Overview
+You have to create a Flask based product showing web app where user can see different products and can search products according to the name.
 
 ## Objectives -
 1. Create a database in sqlite
