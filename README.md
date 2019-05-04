@@ -33,7 +33,19 @@ git clone https://github.com/shubham-chhimpa/UpGradAssignment.git
 
 NOTE : The mail function only works when your have done two-step verification to your gmail account and then you can get your app password from here
 
-> Step 4 : go to the 
+> Step 4 : go to the terminal and go to /UpGradAssignment/ directory using cd command and then run virtual environment
+(skip this step if you already in done)
 
+> Step 5 : run the following command to install required libs
 
+```
+pip install -r requirements.txt
+
+```
+> step 6 : now run app.py that will run your app locally
+
+> step 7 : open following url in your browser
+```
+http://127.0.0.1:5000/
+```
 
