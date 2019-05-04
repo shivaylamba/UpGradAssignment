@@ -31,7 +31,8 @@ git clone https://github.com/shubham-chhimpa/UpGradAssignment.git
     MAIL_PASSWORD='your_gmail_apps_password_key'
 ```
 
-NOTE : The mail function only works when your have done two-step verification to your gmail account and then you can get your app password from here
+NOTE : The mail function only works when your have done [two-step verification to your gmail account](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en) and then you can get your [app password](https://myaccount.google.com/apppasswords
+)
 
 > Step 4 : go to the terminal and go to /UpGradAssignment/ directory using cd command and then run virtual environment
 (skip this step if you already in done)
