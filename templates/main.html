@@ -1,0 +1,79 @@
+{% extends 'basiclayout.html' %}
+
+{% block content %}
+
+<body>
+
+<div class="navbar-fixed">
+    <nav class="nav-extended" style="height:120px;">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a>A link</a></li>
+                <li><a>A second link</a></li>
+                <li><a>A third link</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <div class="row" style="margin-right:2em;margin-left:2em;">
+                <div class="col s12 l4">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">search</i>
+                            <input type="text" id="autocomplete-input" class="autocomplete">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Category 1</a></li>
+    <li><a href="#">Category 2</a></li>
+    <li><a href="#">Category 3</a></li>
+    <li><a href="#">Category 4</a></li>
+</ul>
+
+
+<div style="margin-top:4em" class="container">
+    <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+
+            {%for product in allproducts %}
+            <div class="col s6 m6 l4">
+
+                <div class="card ">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id = {{product.id}} class="activator"
+                             src={{product.image}}>
+                    </div>
+                    <div style="padding:10px" class="card-content">
+
+                        <p><a href="#">{{product.name}}</a></p>
+                    </div>
+
+                </div>
+            </div>
+            {%endfor%}
+
+
+        </div>
+
+    </div>
+    <br><br>
+</div>
+
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'app.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'sidebar.js') }}"></script>
+</body>
+
+{% endblock %}
+

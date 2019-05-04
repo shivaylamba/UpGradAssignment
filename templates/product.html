@@ -1,0 +1,56 @@
+{% extends 'basiclayout.html' %}
+
+{% block content %}
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a id="backBtn" href="#" class="sidenav-trigger"><i class="material-icons">arrow_back</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a>A link</a></li>
+                <li><a>A second link</a></li>
+                <li><a>A third link</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<div style="margin-top:4em" class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src={{ product.image}}>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i
+                                class="material-icons">email</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p> <strong>{{product.name}}</strong> </p>
+                        <p> Price : {{product.price}} </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <br><br>
+</div>
+{% include 'modal.html' %}
+
+
+
+{% endblock %}
+
+{% block scriptcontent %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'product.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'modal.js') }}"></script>
+
+{% endblock %}
+
