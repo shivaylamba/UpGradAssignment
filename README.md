@@ -14,6 +14,21 @@ You have to create a Flask based product showing web app where user can see diff
 4. Create a user interface
 5. Mail the details of the product in which the user is interested
 
+## DEMO Screnshots
+[![IMAGE ALT TEXT HERE](https://i.imgur.com/lCy63Rn.png)]
+
+[![IMAGE ALT TEXT HERE](https://i.imgur.com/rs19GTS.png)]
+
+[![IMAGE ALT TEXT HERE](https://i.imgur.com/xJBNkz3.png)]
+
+[![IMAGE ALT TEXT HERE](https://i.imgur.com/IYG4mHp.png)]
+
+## Demo Video
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ugZ3myVmDAc/0.jpg)]
+
+(https://youtu.be/ugZ3myVmDAc)
+
 ## Steps to run locally
 
 > Step 1 : create a virtual environment
